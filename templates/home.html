@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Tracking</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    
+  <style>
+      /*body { background: rgb(105,105,105) !important; }*/
+      html, body {
+    height: 100%;
+    width: 100%;
+                }
+
+    html {
+    display: table;
+    margin: auto;
+        }
+
+    body {
+    display: table-cell;
+    vertical-align: middle;
+    }
+      body {
+		color: #fff;
+		background: #333333;
+		font-family: 'Roboto', sans-serif;
+	}
+    .btn
+  {
+    
+    width: 100%;
+    /* height: 100%; */
+  }
+.btn-success,
+.btn-success:hover,
+.btn-success:active,
+.btn-success:visited,
+.btn-success:focus {
+    background-color: #097479 !important;
+    border-color: #FFFFFF !important;
+}
+.btn-success{
+  font-size:13pt !important;
+}
+.jumbotron
+  {
+    height:auto;
+    padding:5px 0 !important;
+  }
+  .container {
+    
+    justify-content: center;
+    align-items: center;
+}
+      
+      label { color: white; }
+  </style>
+</head>
+<body>
+    
+    
+    
+    
+
+    
+    <div class="container">
+        <hr>
+        <div class="jumbotron">
+        <h1 align="center" style="color:black;" class="font-weight-bold">Select Device</h1>      
+        </div>
+    
+        
+
+        <form id="configure-form" action="/mapview" method="GET">
+
+            
+            <div class="form-group row justify-content-center no-gutters">
+                <label for="deviceNo" class="col-sm-2 col-form-label font-weight-bold" style="text-align:justify;">Device Number :</label>
+                <div class="col-sm-2">
+                  <input type="text" class="form-control" id="device" name="boxno" placeholder="001" style="text-align:center;" required>
+                </div>
+            </div>
+            
+            
+            
+                                                                
+            <div class="form-group row">
+                 <div class="col-sm-4"></div>       
+                <div class="col-sm-2">
+                    <button type="submit" class="btn btn-success " >Track Live</button>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" class="btn btn-success" onclick= "return_home()">Cancel</button>
+                </div>
+                        
+            </div>
+          
+                                                              
+                                                  
+        </form>
+
+    </div>
+
+<script type="text/javascript">
+function return_home(){
+    window.location.href = "/home";    
+}
+
+</script>
+   
+</body>
+</html>
