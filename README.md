@@ -2,7 +2,7 @@
 An easiest way to plot maps using python(Flask Framework) and Folium without using any Cloud Api's.
 
 
-Step [1]. pip install -r /path/to/requirements.txt
+Step [1]. pip install -r requirements.txt
 
 Step [2]. Configure your database from where you will be retrieving latitudes and longitudes. (In flaskapp.py)
 
