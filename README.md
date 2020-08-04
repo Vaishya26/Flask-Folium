@@ -1,5 +1,5 @@
 # Flask-Folium
-An easiest way to plot maps using python(Flask Framework) and Folium without using any Cloud Api's.
+An easiest way to plot maps with Live Location using python(Flask Framework) and Folium without using any Cloud Api's.
 
 
 Step [1]. pip install -r requirements.txt
